@@ -13,7 +13,7 @@ private static int modify( int oldValue ) {
 }
 ```
 
-the full usage is documented here: [@Constant](constant.md).
+The full usage of constant is documented here: [@Constant](constant.md).
 
 #### Other Properties
 By default mixin will ignore if the modeficatiation actually applies or not, those options can be used to force the mixin to throw an exception if the number of injection is not within a specified range.

@@ -1,11 +1,11 @@
 ## @Constant
 [Back](mixins.md)
 
-Used to select a constant, for usage see: [@ModifyConstant](modify_constant.md)
+Used to select a constant, for usage see: [@ModifyConstant](modify_constant.md).
 
 As comparisons with zero and false values are optimized by the compiler special enums to match them are provided:
 
-**Note:** All those enums expect `x` to be on the right-hand side, if that is not the case use the inverse.
+**Note:** All those enums expect `x` to be on the left-hand side, if that is not the case use the inverse.
 
 | Name | Description |
 | --- | --- |
