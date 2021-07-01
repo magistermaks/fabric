@@ -19,14 +19,16 @@ Method signature takes the following form: `<qualifier><name>(<args>)<return>`
 | **Z** | `boolean` |
 | **\[** | an array dimension |
 
-Class paths special cases:
+Special cases:
 * Sub-classes are separated with `$`, `Lnet/minecraft/block/AbstractBlock$Settings;`
 * All generics (`Class<T>`) are ignored in signatures, `LClass;`
+* VarArgs (`int...`) are just arrays, `[I`
 
 Examples:
 * `method()V` for: `method()`
 * `method(III)Ljava/lang/String;` for: `String method(int, int, int)`
-* `method([I)Ljava/lang/Object;` for `Object method( int[] )`
+* `method([I)Ljava/lang/Object;` for: `Object method( int[] )`
 * `method(J[B)V` for: `void method(long, byte...)`
+* `method(I[DLjava/lang/Thread;)Ljava/lang/Object;` for: `Object method(int i, double[] d, Thread<T> t)`
 
 
