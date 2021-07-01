@@ -9,6 +9,7 @@ Other resources that can also be found useful:
 #### Table of Contents
 * Basics
 	* [@Mixin](mixin.md)
+	* [Signatures](signatures.md)
 * Injectors
 	* [@Overwrite](overwrite.md)
 	* [@Inject](inject.md)
@@ -16,7 +17,7 @@ Other resources that can also be found useful:
 	* ~~[@ModifyVariable](modify_variable.md)~~
 	* ~~[@ModifyArgs](modify_args.md)~~
 	* ~~[@ModifyArg](modify_arg.md)~~
-	* ~~[@Redirect](redirect.md)~~
+	* [@Redirect](redirect.md)
 * Other Annotations
 	* [@Constant](constant.md)
 	* [@At](at.md)

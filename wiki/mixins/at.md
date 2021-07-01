@@ -22,7 +22,7 @@ If the selection results in a multiple injection point, `ordinal` property can b
 
 Example:
 ```java
-@Inject(method="target(II)V", at=@At("RETURN"), ordinal=1)
+@Inject(method="target(II)V", at=@At(value="RETURN", ordinal=1))
 public void injection(int a, int b, CallbackInfo info) {
 	// code to be injected before the second return
 }
