@@ -21,7 +21,7 @@ The `at` parameter of the `@Inject` adnotation specifies where the code will be 
 | HEAD | Top of the method |
 | RETURN | Before every return statement |
 | INVOKE | At a method call |
-| TAIL |  Before the final return statement  |
+| TAIL | Before the final return statement |
 
 #### Injecting Into Constructors
 Will only work for `@At("TAIL")` and `@At("RETURN")`, the return value of constructors is of type `void` so `CallbackInfo` should be used - not `CallbackInfoReturnable<T>`.
