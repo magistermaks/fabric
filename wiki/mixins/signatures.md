@@ -6,18 +6,22 @@ Method signature takes the following form: `<qualifier><name>(<args>)<return>`
 * **arg** Method argumets, for example: `IIILjava/lang/String;` for `int, int, int, String`.
 * **return** Method's return type, for example: `V` for `void`.
 
-| Symbol | Type | Description |
-| --- | --- | --- |
-| B | byte | signed byte |
-| C | char | Unicode character code point in the Basic Multilingual Plane, encoded with UTF-16 |
-| D | double | double-precision floating-point value |
-| F | float | single-precision floating-point value |
-| I | int | integer |
-| J | long | long integer |
-| Lpath/to/ClassName; | reference | an instance of ClassName |
-| S | short | signed short |
-| Z | boolean | true or false |
-| \[ | reference | one array dimension |
+| Symbol | Type |
+| --- | --- | 
+| **B** | `byte` | 
+| **C** | `char` | 
+| **D** | `double` |
+| **F** | `float` |
+| **I** | `int` |
+| **J** | `long` |
+| **Lpath/to/ClassName;** | `ClassName` |
+| **S** | `short` |
+| **Z** | `boolean` |
+| **\[** | an array dimension |
+
+Class paths special cases:
+* Sub-classes are separated with `$`, `Lnet/minecraft/block/AbstractBlock$Settings;`
+* All generics (`Class<T>`) are ignored in signatures, `LClass;`
 
 Examples:
 * `method()V` for: `method()`
