@@ -1,4 +1,5 @@
 ## Signatures
+[Back](mixins.md)
 
 Method signature takes the following form: `<qualifier><name>(<args>)<return>`
 * **qualifier** Optional in most circumstances, the type of the class in which the method is located. For example: `Ljava/lang/String;` to specify the String class.
