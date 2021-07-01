@@ -3,8 +3,8 @@
 This article describes how to use Mixins to effectively modify existing classes.  
 
 Other resources that can be found useful:
-* [mixin cheatsheet](/2xsaiko/mixin-cheatsheet/blob/master/README.md)
-* [offical mixin wiki](/SpongePowered/Mixin/wiki)
+* [mixin cheatsheet](https://github.com/2xsaiko/mixin-cheatsheet/blob/master/README.md)
+* [offical mixin wiki](https://github.com/SpongePowered/Mixin/wiki)
 
 #### Table of Contents
 * [@Overwrite](overwrite.md)

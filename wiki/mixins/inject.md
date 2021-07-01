@@ -4,11 +4,11 @@
 Injects code into the target method at the specified position. Must be placed in a [@Mixin](mixin.md) class.
 
 #### Return Type
-The method to be injected takes one more argument than the target that depend on the return type of target method - `CallbackInfo` if target returns void or `CallbackInfoReturnable<T>` oterwise where `T` is the return type.
+The method to be injected takes one more argument than the target that depend on the return type of target method - `CallbackInfo` if target returns void or `CallbackInfoReturnable<T>` otherwise - where `T` is the return type.
 
 Example: injecting into `int target( int a, int b )` method
 ```java
-@Inject(method="target(II)V", at=@At("INVOKE"))
+@Inject(method="target(II)I", at=@At("INVOKE"))
 private void injected( int a, int b, CallbackInfoReturnable<Integer> info ) {
 	// code to be injected into target
 }
@@ -55,5 +55,29 @@ private void injected( CallbackInfo info ) {
 ```
 
 #### Capture Locals
+Local variables from the target method can captured by specifing `locals` parameters in the `@Inject` adnotation.
 
-**TODO**
+Example:
+```java
+@Inject(method="target(II)I", at=@At("INVOKE"), locals=LocalCapture.CAPTURE_FAILSOFT)
+private void injected( int a, int b, CallbackInfoReturnable<Integer> info, int sth ) {
+	// this code will capture local varible 'sth' from target method
+	System.out.print(sth);
+}
+```
+
+| Name | Description |
+| --- | --- |
+| NO_CAPTURE | The default value, don't capture any locals |
+| CAPTURE_FAILSOFT | Print a warning and skips the injection if the exepected locals don't match with the target |
+| CAPTURE_FAILHARD | Fail if the calculated locals are different from the expected values |
+| CAPTURE_FAILEXCEPTION | Throws an exception if the method is called and exepected locals don't match with the target |
+| PRINT | This will print avaible locals and signatures to the log |
+
+This will result in a following injection:
+```patch
+int target( int a, int b ) {
+	int sth = a + b;
++	System.out.print(sth);
+}
+```
