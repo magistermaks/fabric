@@ -16,8 +16,8 @@ Other resources that can also be found useful:
 	* [@Inject](inject.md)
 	* [@ModifyConstant](modify_constant.md)
 	* ~~[@ModifyVariable](modify_variable.md)~~
-	* ~~[@ModifyArgs](modify_args.md)~~
-	* ~~[@ModifyArg](modify_arg.md)~~
+	* [@ModifyArgs](modify_args.md)
+	* [@ModifyArg](modify_arg.md)
 	* [@Redirect](redirect.md)
 * Other Annotations
 	* [@Constant](constant.md)
