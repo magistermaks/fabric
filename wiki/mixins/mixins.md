@@ -23,5 +23,6 @@ Other resources that can also be found useful:
 	* [@Constant](constant.md)
 	* [@At](at.md)
 	* ~~[@Slice](slice.md)~~
+	* [@Pseudo](pseudo.md)
 
 

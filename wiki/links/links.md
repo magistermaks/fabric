@@ -13,6 +13,7 @@ Useful fabric libraries:
 | [Cloth Config](https://github.com/shedaniel/cloth-config) | Config |
 | [JMX](https://github.com/grondag/json-model-extensions) | Rendering, JSON |
 | [Cardinal Components API](https://github.com/OnyxStudios/Cardinal-Components-API) | Data |
+| [ARRP](https://github.com/Devan-Kerman/ARRP) | Resources |
 
 #### References
 Open source mods that can be used as references:
