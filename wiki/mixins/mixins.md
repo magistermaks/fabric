@@ -24,8 +24,8 @@ This article describes how to use Mixins to effectively modify existing classes.
 	* [@Shadow](shadow.md)
 	* [@Final](final.md)
 	* [@Mutable](mutable.md)
-	* ~~[@Invoker](invoker.md)~~
-	* ~~[@Accessor](accessor.md)~~
+	* [@Invoker](invoker.md)
+	* [@Accessor](accessor.md)
 
 Mixin are a powerful tool but sometimes something more is needed. [Access Wideners](access_wideners.md) are not a part of the mixin library, but a tool added in Fabric Loaded 0.8,
 they allow to change the access and finality of classes, methods, and fields.
