@@ -35,6 +35,19 @@ class MixinClass {
 
 If you are trying to mixin into private class, or a class that doesn't exist at the compile time use `target` property to pass the class as a string: `@Mixin(target = "net/example/Example")`. _If the target class may be missing at the runtime remember to use [@Pseudo](pseudo.md) annotation._
 
+#### Using `this`
+To reference the target class with `this` and keep the compiler happy, we have to cast the mixin's `this` to a object (as the compiler wrongly thinks that `this` refers to `MixinClass`) and then to `TargetClass`.
+
+```java
+@Mixix(TargetClass.class) {
+
+	private method() {
+		((TargetClass) (Object) this).somePublicMethodOfTargetClass();
+	}
+
+}
+```
+
 #### Extending
 Let's imagine a situation where the target class `TargetClass` extends a `SomeClass` class, and you want to 'inject' an over**ride** of one of the non-final methods from `SomeClass` into `TargetClass`, how could you accomplish this?
 
