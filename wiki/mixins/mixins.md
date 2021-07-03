@@ -1,11 +1,7 @@
 ## Mixins
 [Back](/README.md)
 
-This article describes how to use Mixins to effectively modify existing classes.  
-Other resources that can also be found useful:
-* [Mixin Cheatsheet](https://github.com/2xsaiko/mixin-cheatsheet/blob/master/README.md)
-* [Offical Wiki](https://github.com/SpongePowered/Mixin/wiki)
-* [Fabric Wiki](https://fabricmc.net/wiki/tutorial:mixin_introduction)
+This article describes how to use Mixins to effectively modify existing classes. Note: The method modifications listed in these articles are more of a reference of what the code effectively does, and not exactly how it does it.
 
 #### Table of Contents
 * Basics
@@ -25,5 +21,5 @@ Other resources that can also be found useful:
 	* ~~[@Slice](slice.md)~~
 	* [@Pseudo](pseudo.md)
 
-Mixin are a powerfull tool but sometimes something more is needed. [Access Wideners](access_wideners.md) are not a part of the mixin library, but a tool added in Fabric Loaded 0.8,
+Mixin are a powerful tool but sometimes something more is needed. [Access Wideners](access_wideners.md) are not a part of the mixin library, but a tool added in Fabric Loaded 0.8,
 they allow to change the access and finality of classes, methods, and fields.

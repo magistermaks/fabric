@@ -19,4 +19,4 @@ private void target() {
 }
 ```
 
-If the local variable to be modified cannot be deduced by the mixin (for example when there are multiple locals of the same type) the `index` propery can be used to specify exacly which variable should be modified. The index is one-based and includes method arguments.
+If the local variable to be modified cannot be deduced by the mixin (for example when there are multiple locals of the same type) the `index` property can be used to specify exactly which variable should be modified. The index is one-based and includes method arguments.

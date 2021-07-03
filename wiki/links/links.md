@@ -3,7 +3,7 @@
 
 links to external resources that may be found useful:
 * [Mixin Cheatsheet](https://github.com/2xsaiko/mixin-cheatsheet/blob/master/README.md)
-* [Offical Mixin Wiki](https://github.com/SpongePowered/Mixin/wiki)
+* [Official Mixin Wiki](https://github.com/SpongePowered/Mixin/wiki)
 * [Fabric Wiki](https://fabricmc.net/wiki)
 
 #### Libraries

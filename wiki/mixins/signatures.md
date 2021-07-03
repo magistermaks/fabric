@@ -1,9 +1,9 @@
 ## Signatures
 [Back](mixins.md)
 
-Signatures in java are strings identifing methods, classes, and fields, those strings are commony used when working with mixins, this article describes how those strings are formmated and how to write thaem based on a method/field definition. 
+Signatures in java are strings identifying methods, classes, and fields, those strings are commonly used when working with mixins, this article describes how those strings are formatted and how to write them based on a method/field definition. 
 
-**Note:** If you are using IDEA with the [Minecraft Development](https://github.com/minecraft-dev/MinecraftDev) as recomended by our [Setup Guide](/basics/setup/ide.md) you can right click on a method or field usage/definition and select `Copy Mixin Targe Reference` to get the correct signature.
+**Note:** If you are using IDEA with the [Minecraft Development](https://github.com/minecraft-dev/MinecraftDev) as recommended by our [Setup Guide](/basics/setup/ide.md) you can right click on a method or field usage/definition and select `Copy Mixin Targe Reference` to get the correct signature.
 
 * Method signature: `<qualifier><name>(<args>)<return>`
 * Field signature: `<qualifier><name>:<return>`
@@ -11,7 +11,7 @@ Signatures in java are strings identifing methods, classes, and fields, those st
 
 `<qualifier>` - Optional in most circumstances, used only for full signatures. The type of the class in which the method is located. For example: `Ljava/lang/String;` to specify the String class.  
 `<name>` - The name the method, `<init>` for constructors, `<clinit>` for static constructors.  
-`<args>` - Method argumets, for example: `IIILjava/lang/String;` for `int, int, int, String`.  
+`<args>` - Method arguments, for example: `IIILjava/lang/String;` for `int, int, int, String`.  
 `<return>` - Method's return type, for example: `V` for `void`.  
 
 | Symbol | Type |
@@ -22,7 +22,7 @@ Signatures in java are strings identifing methods, classes, and fields, those st
 | **F** | `float` |
 | **I** | `int` |
 | **J** | `long` |
-| **Lpath/to/ClassName;** | `ClassName` |
+| **`Lpath/to/ClassName;`** | `ClassName` |
 | **S** | `short` |
 | **Z** | `boolean` |
 | **\[** | array dimension |

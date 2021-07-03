@@ -14,7 +14,7 @@ private void injected( int a, int b, CallbackInfoReturnable<Integer> info ) {
 }
 ```
 
-The `at` parameter of the `@Inject` adnotation specifies where the code will be injected in the target, learn more about it here: [@At](at.md). But the following table describes a few of the options: 
+The `at` parameter of the `@Inject` annotation specifies where the code will be injected in the target, learn more about it here: [@At](at.md). But the following table describes a few of the options: 
 
 | Name | Description |
 | --- | --- |
@@ -35,7 +35,7 @@ private void init(CallbackInfo info) {
 ```
 
 #### Cancellable Injections
-The injection can be cancelled when a `cancellable=true` paramter is added to the `@Inject` adnotation.
+The injection can be cancelled when a `cancellable=true` parameter is added to the `@Inject` annotation.
 
 Example:
 ```java
@@ -47,19 +47,19 @@ private void injected( CallbackInfo info ) {
 		// works similary to calling return in the target
 		info.cancel();
 		
-		// if `info` is of type `CallbackInfoReturnable` the
-		// method can be canceled with `info.setReturnValue( value )`
+		// if 'info' is of type 'CallbackInfoReturnable' the
+		// method can be canceled with 'info.setReturnValue( value )'
 		
 	}
 }
 ```
 
 #### Capture Locals
-Local variables from the target method can captured by specifing `locals` parameters in the `@Inject` adnotation.
+Local variables from the target method can captured by specifying `locals` parameters in the `@Inject` annotation. Remember to select a point after the local is defined.
 
 Example:
 ```java
-@Inject(method="target(II)I", at=@At("INVOKE"), locals=LocalCapture.CAPTURE_FAILSOFT)
+@Inject(method="target(II)I", at=@At(value="INVOKE_ASSIGN", ordinal=0), locals=LocalCapture.CAPTURE_FAILSOFT)
 private void injected( int a, int b, CallbackInfoReturnable<Integer> info, int sth ) {
 	// this code will capture local varible 'sth' from target method
 	System.out.print(sth);
@@ -68,16 +68,16 @@ private void injected( int a, int b, CallbackInfoReturnable<Integer> info, int s
 
 | Name | Description |
 | --- | --- |
-| NO_CAPTURE | The default value, don't capture any locals |
-| CAPTURE_FAILSOFT | Print a warning and skips the injection if the exepected locals don't match with the target |
-| CAPTURE_FAILHARD | Fail if the calculated locals are different from the expected values |
-| CAPTURE_FAILEXCEPTION | Throws an exception if the method is called and exepected locals don't match with the target |
-| PRINT | This will print avaible locals and signatures to the log |
+| `NO_CAPTURE` | The default value, don't capture any locals |
+| `CAPTURE_FAILSOFT` | Print a warning and skips the injection if the expected locals don't match with the target |
+| `CAPTURE_FAILHARD` | Fail if the calculated locals are different from the expected values |
+| `CAPTURE_FAILEXCEPTION` | Throws an exception if the method is called and expected locals don't match with the target |
+| `PRINT` | This will print available locals and signatures to the log |
 
 This will result in a following injection:
 ```patch
 int target( int a, int b ) {
-	int sth = a + b;
+	int sth = method(a, b);
 +	System.out.print(sth);
 }
 ```
