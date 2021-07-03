@@ -1,0 +1,9 @@
+## @Slice
+[Back](mixins.md)
+
+Allows for a more specific injection, it specifies a range in with the selection can be made. `from` marks the starting position, and `to` marks the ending position. Read more about [@Inject](inject.md).
+
+Example:
+```java
+@Inject(slice=@Slice(from=@At(...), to=@At(...)), at = @At(...))
+```

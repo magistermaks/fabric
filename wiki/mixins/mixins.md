@@ -18,7 +18,7 @@ This article describes how to use Mixins to effectively modify existing classes.
 * Other Annotations
 	* [@Constant](constant.md)
 	* [@At](at.md)
-	* ~~[@Slice](slice.md)~~
+	* [@Slice](slice.md)
 	* [@Pseudo](pseudo.md)
 	* [@Unique](unique.md)
 	* [@Shadow](shadow.md)
