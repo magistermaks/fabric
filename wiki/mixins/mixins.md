@@ -25,4 +25,5 @@ Other resources that can also be found useful:
 	* ~~[@Slice](slice.md)~~
 	* [@Pseudo](pseudo.md)
 
-
+Mixin are a powerfull tool but sometimes something more is needed. [Access Wideners](access_wideners.md) are not a part of the mixin library, but a tool added in Fabric Loaded 0.8,
+they allow to change the access and finality of classes, methods, and fields.
