@@ -59,7 +59,7 @@ class TargetClassMixin {
 
 This example shows exactly that, mixins inject **all** methods placed in their body into the target class, you can even make your mixin abstract and extend the `SomeClass` so that you can use the java's `@Override` annotation.
 
-But sometime this can cause problems, what if you just want to write some helper method that is used only by the code in you mixin and you don't want it being injected into the target class? (it could then conflict with a similar helper method injected there by some other mod) You can use the [@Unique](unique.md) annotation, it won't stop them being inject, but it ensures that the method names never conflict by adding prefixes unique to each mod.
+But sometime this can cause problems, what if you just want to write some helper method or field that is used only by the code in you mixin and you don't want it being injected into the target class? (it could then conflict with a similar helper method injected there by some other mod) You can use the [@Unique](unique.md) annotation, it won't stop them being inject, but it ensures that the method names never conflict.
 
 #### Priority
 @Mixin annotation can take additional parameter - `priority` which dictates how mixin should apply the changes if multiple mixins are applied to the same class. The default value of `priority` is `1000`, **lower value** indicates **higher** priority.
