@@ -10,4 +10,4 @@ The style of the wiki should be kept consistent on all articles.
 * Make sure all articles are approachable even for people with very limited knowledge, provide links to articles about all mentioned concepts.
 * Provide full examples, examples are usually the best way to describe something.
 
-_This article, and the wiki as a whole is still very WIP, expect unannouced changes._
+_This article, and the wiki as a whole is still very WIP, expect unannounced changes._
