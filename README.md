@@ -1,5 +1,7 @@
 ## Fabric Wiki
 
+~~Are you new to modding with fabric? Start here: [Basics/Introduction](wiki/basics/introduction.md) and good luck!~~
+
 #### Table of Contents
 * [Basics](wiki/basics/basics.md)
 * [Mixins](wiki/mixins/mixins.md)

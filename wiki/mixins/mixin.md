@@ -74,7 +74,7 @@ This example shows exactly that, mixins inject **all** methods placed in their b
 
 But sometime this can cause problems, what if you just want to write some private helper method or field that is used only by the code in you mixin and you don't want it being injected into the target class? (it could then conflict with a similar helper method injected there by some other mod) You can use the [@Unique](unique.md) annotation, it won't stop them being inject, but it ensures that the method names never conflict.
 
-If you want to actualy add a public method to the target class that would be accessible from the outside of the mixin class, don't use [@Unique](unique.md) but simply add a prefix to the method or field name e.g. `mymod_someMethod()` and use the Duck Interface to access it.
+If you want to actually add a public method to the target class that would be accessible from the outside of the mixin class, don't use [@Unique](unique.md) but simply add a prefix to the method or field name e.g. `mymod_someMethod()` and use the Duck Interface to access it.
 
 #### The 'Duck' Interface
 Is an interface that the mixin implements and that is used as a proxy to access methods added to the target class by a mixin.
