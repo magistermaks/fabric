@@ -1,7 +1,7 @@
 ## Color Providers
 [Back](../fabric.md)
 
-Those are lambdas used to add tint to textures of blocks or items, this is the mechanism used by grass to change color depending on biome. This system is client-side only.
+Those are lambdas used to add tint to textures of blocks or items, this is the mechanism used by grass blocks to change color depending on the biome. This system is client-side only.
 
 ```java
 // BlockColorProvider

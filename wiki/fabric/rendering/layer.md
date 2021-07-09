@@ -1,7 +1,7 @@
 ## Render Layers
 [Back](../fabric.md)
 
-Render Layers allow speicfing how textures of a model should be rendered.
+Render Layers allow specifying how textures of a model should be rendered.
 
 ```java
 // change rander layer of one block/item
@@ -13,11 +13,11 @@ BlockRenderLayerMap.INSTANCE.putBlocks(renderLayer, blocks)
 BlockRenderLayerMap.INSTANCE.putItems(renderLayer, items)
 ```
 
-| RenderLayer | description | example |
+| `RenderLayer` | description | example |
 | ----------- | ----------- | ------- |
-| getSolid() | Default value, non-255 alpha values are replaced with black color | Stone |
-| getCutout() | Allows 0 or 255 alpha values for no or full transparency | Glass |
-| getTransparent() | Enables full color blending | Stained Glass |
+| `getSolid()` | Default value, non-255 alpha values are replaced with black color | Stone |
+| `getCutout()` | Allows 0 or 255 alpha values for no or full transparency | Glass |
+| `getTransparent()` | Enables full color blending | Stained Glass |
 
 #### Transparent Blocks
 In glass-like blocks setting block's transparency and using cutout/translucent render layer is not enough, because the faces of other glass blocks will be visible behind it (see _Fig. 1_). To disable that behavior (make faces between two transparent glass blocks invisible, see _Fig. 2_) override `isSideInvisible(BlockState, BlockState, Direction)` method from block class to return `true` for blocks of the same type:
