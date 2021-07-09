@@ -100,6 +100,22 @@ class TargetMixin implements TargetMixinDuck {
 // call 'example_addedMethod' method added to 'TargetClass'
 ```
 
+#### Inheritance
+Mixins can also be used to "inject" some class into target class' inheritance tree.
+
+Example:
+```java
+class TargetClass {
+	// empty
+}
+
+@Mixin(TargetClass.class)
+class TargetClassMixin implements SomeInterface {
+	// implement all methods from SomeInterface 
+}
+```
+
+After the presented mixin is applied `TargetClass` will implement `SomeInterface` so that `targetClass instanceof SomeInterface == true`.
 
 #### Priority
 @Mixin annotation can take additional parameter - `priority` which dictates how mixin should apply the changes if multiple mixins are applied to the same class. The default value of `priority` is `1000`, **lower value** indicates **higher** priority.

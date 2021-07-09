@@ -2,6 +2,7 @@
 [Back](dynamic.md)
 
 They allow for dynamic rendering of blocks, and are commonly called `BER`s (Block Entity Renderers). 
+To do this with items see: [Dynamic Item Renderers](item.md)
 
 We first must create a new block renderer class:
 ```java

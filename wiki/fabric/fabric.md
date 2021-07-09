@@ -9,8 +9,8 @@ This series of articles tries to document the vast Fabric API, `@Deprected` and 
 * Rendering
 	* [Color Providers](rendering/color_providers.md)
 	* [Render Layers](rendering/layer.md)
-	* ~~[Dynamic Renderers](rendering/dynamic/dynamic.md)~~
-	* ~~[Data Attachments](rendering/attachments.md)~~
+	* [Dynamic Renderers](rendering/dynamic/dynamic.md)
+	* [Data Attachments](rendering/attachments.md)
 	* ~~[Models](rendering/models/models.md)~~
 	* ~~[Quads](rendering/quads/quads.md)~~
 	* ~~[Renderer](rendering/renderer.md)~~
