@@ -1,7 +1,7 @@
 ## Dynamic Item Renderers
 [Back](dynamic.md)
 
-They allow for dynamic rendering of items. To do this with blocks see: [Dynamic Block Renderers](block.md) To register a custom renderer for a block `BuiltinItemRendererRegistry` can be used: 
+They allow for dynamic rendering of items. To do this with blocks see: [Dynamic Block Renderers](block.md) To register a custom renderer for an item `BuiltinItemRendererRegistry` can be used: 
 
 ```java
 BuiltinItemRendererRegistry.INSTANCE.register(item, new MyDynamicItemRenderer()); 
@@ -12,3 +12,5 @@ BuiltinItemRendererRegistry.INSTANCE.register(item, (stack, modelTransformationM
 	// render here
 } );
 ```
+
+**Note:** Item models must set the `parent` model property to `minecraft:builtin/entity` for this to work.

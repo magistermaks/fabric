@@ -20,7 +20,7 @@ BlockRenderLayerMap.INSTANCE.putItems(renderLayer, items)
 | `getTransparent()` | Enables full color blending | Stained Glass |
 
 #### Transparent Blocks
-In glass-like blocks setting block's transparency and using cutout/translucent render layer is not enough, because the faces of other glass blocks will be visible behind it (see _Fig. 1_). To disable that behavior (make faces between two transparent glass blocks invisible, see _Fig. 2_) override `isSideInvisible(BlockState, BlockState, Direction)` method from block class to return `true` for blocks of the same type:
+In glass-like blocks setting block's opacity (**TODO**) and using cutout/translucent render layer is not enough, because the faces of other glass blocks will be visible behind it (see _Fig. 1_). To disable that behavior (make faces between two transparent glass blocks invisible, see _Fig. 2_) override `isSideInvisible(BlockState, BlockState, Direction)` method from block class to return `true` for blocks of the same type:
 
 ```java
 public boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
