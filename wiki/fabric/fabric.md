@@ -12,6 +12,6 @@ This series of articles tries to document the vast Fabric API, `@Deprected` and 
 	* [Dynamic Renderers](rendering/dynamic/dynamic.md)
 	* [Data Attachments](rendering/attachments.md)
 	* [Models](rendering/models/models.md)
-	* ~~[Quads](rendering/quads/quads.md)~~
+	* [Quads](rendering/quads/quads.md)
 	* [Renderer](rendering/renderer.md)
 	* [Events](rendering/events.md)

@@ -9,5 +9,9 @@ The style of the wiki should be kept consistent on all articles.
 * Keep all the resources (pictures, etc) in the `/assets` directory.
 * Make sure all articles are approachable even for people with very limited knowledge, provide links to articles about all mentioned concepts.
 * Provide full examples, examples are usually the best way to describe something.
+* Stay on topic, full examples are good but make sure that they don't spiral into explaining other unrelated things
+* Use links, every time you reference something provide a relevant link
+* Don't copy-paste, write your own explanations, don't copy javadocs or other wikis, _especially from the Official Fabric Wiki whose license is incompatible!_
+* Avoid using _we_, _our_
 
 _This article, and the wiki as a whole is still very WIP, expect unannounced changes._

@@ -1,12 +1,12 @@
 ## @ModifyVariable
 [Back](mixins.md)
 
-Modifies local variable at the selected point. Marked method takes a single argument - the old value and returns the new value. Must be placed in a [@Mixin](mixin.md) class.
+Modifies local variable at the selected point. The annotated takes a single argument - the old value and returns the new value. It can also optionally take the target method arguments by adding them at the end of the argument list. Must be placed in a [@Mixin](mixin.md) class.
 
 Example:
 ```java
 @ModifyVariable(method="target()V", at=@At(value="INVOKE_ASSIGN", target="Lnet/example/Example;foo()I"))
-private int modify( int in ) {
+private int modify( int old ) {
 	return 42;
 }
 ```
