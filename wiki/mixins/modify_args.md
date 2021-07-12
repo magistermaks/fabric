@@ -1,7 +1,7 @@
 ## @ModifyArgs
 [Back](mixins.md)
 
-Modifies multiple argument in method invocation. Learn how to select a method with [@At](at.md) annotation. Marked method takes a single `Args` argument and returns `void`. After the `Args` argument it can also optionally take target's method arguments. Must be placed in a [@Mixin](mixin.md) class. To modify a single argument see: [@ModifyArg](modify_arg.md).
+Modifies multiple argument in method invocation. Select the target method with [@At](at.md) annotation. Marked method takes a single `Args` argument and returns `void`. After the `Args` argument it can also optionally take target method arguments. Must be placed in a [@Mixin](mixin.md) class. To modify a single argument see: [@ModifyArg](modify_arg.md).
 
 Example:
 ```java

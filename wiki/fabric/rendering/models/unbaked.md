@@ -1,7 +1,9 @@
 ## Unbaked Models
 [Back](models.md)
 
-Unbaked models store raw model data, they are used as factories of [Baked Models](baked.md), and are returned by [Model Providers](provider.md).
+Unbaked models store raw model data, they are used as factories of [Baked Models](baked.md), and are created by [Model Providers](provider.md).
+
+To create the mesh of the model use a `QuadEmitter`, learn more here: [Rendering](rendering.md), and to register this Unbaked Model use a [Model Provider](provider.md).
 
 ```java
 class UnbakedModelExample implements UnbakedModel {
@@ -29,8 +31,8 @@ class UnbakedModelExample implements UnbakedModel {
 	}
 	
 	@Override
-    public BakedModel bake(ModelLoader loader, Function<SpriteIdentifier, Sprite> textureGetter, ModelBakeSettings rotationContainer, Identifier modelId) {
-        // return new Baked Model, preferably create model mesh here using 
+	public BakedModel bake(ModelLoader loader, Function<SpriteIdentifier, Sprite> textureGetter, ModelBakeSettings rotationContainer, Identifier modelId) {
+		// return new Baked Model, preferably create model mesh here using 
 		// Fabric Rendering API, but dynamic models can create their meshes 
 		// in Baked Models
 		
@@ -39,17 +41,18 @@ class UnbakedModelExample implements UnbakedModel {
 		
 		// get the renderer and a new mesh builder, see 'Renderer'
 		Renderer renderer = RendererAccess.INSTANCE.getRenderer();
-        MeshBuilder builder = renderer.meshBuilder();
+		MeshBuilder builder = renderer.meshBuilder();
 		
-		// this emitter will emit quad to the mesh
-        QuadEmitter emitter = builder.getEmitter();
+		// this emitter will emit quads to the mesh
+		QuadEmitter emitter = builder.getEmitter();
 		
-		// emit model quads with emitter, see: 'Quads/Emitter'
+		// emit model quads with emitter
+		// ...
 		
-		return new BakedModelExample( sprite, builder.get() /* create new mesh */ )
-    }
+		return new BakedModelExample( sprite, builder.get() );
+	}
 
 }
 ```
 
-To register this model use a [Model Provider](provider.md).
+Continue reading in: [Baked Models](baked.md).

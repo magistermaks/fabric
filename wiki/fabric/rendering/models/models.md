@@ -7,5 +7,6 @@ Models are meshes that are baked into chunk geometry on rebuilds (when chunks ar
 * [Model Providers](provider.md)
 * [Unbaked Models](unbaked.md)
 * [Baked Models](baked.md)
+* [Rendering](rendering.md)
 
 _The usage of the term "Model Loading" is a little exercise of creative freedom, as the real name "Model Provider" is hard to work with. A more descriptive name was chosen for the purpose of clarity._
