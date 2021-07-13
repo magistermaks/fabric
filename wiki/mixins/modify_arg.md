@@ -1,5 +1,5 @@
 ## @ModifyArg
-[Back](mixins.md)
+[Back](mixins.md) [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/org/spongepowered/asm/mixin/injection/ModifyArg.html)
 
 Modifies argument in method invocation. Learn how to select a method with [@At](at.md) annotation. The `index` property can be used to specify zero-base index of the argument to be modified (if the target method has more than one argument). The modification method takes either only one argument - the old value, or all arguments given to target method. Must be placed in a [@Mixin](mixin.md) class. To modify multiple arguments see: [@ModifyArgs](modify_args.md).
 

@@ -1,5 +1,5 @@
 ## @Redirect
-[Back](mixins.md)
+[Back](mixins.md) [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/org/spongepowered/asm/mixin/injection/Redirect.html)
 
 Redirects (replaces) the selected point (a method call, field access, or object construction). Must be placed in a [@Mixin](mixin.md) class.
 

@@ -1,5 +1,5 @@
 ## @Final
-[Back](mixins.md)
+[Back](mixins.md) [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/org/spongepowered/asm/mixin/Final.html)
 
 Should be added to along with [@Shadow](shadow.md) if the shadowed field or method is final in the target class. The annotated filed or method **shouldn't** be than marked with java's `final` keyword. To modify shadowed final field marked with use [@Mutable](mutable.md).
 

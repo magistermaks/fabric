@@ -1,5 +1,5 @@
 ## @Mutable
-[Back](mixins.md)
+[Back](mixins.md) [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/org/spongepowered/asm/mixin/Mutable.html)
 
 It allows modifying a shadowed final field. See: [@Shadow](shadow.md), [@Final](final.md) for reference.
 

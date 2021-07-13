@@ -1,5 +1,5 @@
 ## @Shadow
-[Back](mixins.md)
+[Back](mixins.md) [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/org/spongepowered/asm/mixin/Shadow.html)
 
 Allows accessing method or field from the target class, to used it, mark field or method of the same name, type, and access specifier.
 

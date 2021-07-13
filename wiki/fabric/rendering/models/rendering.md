@@ -24,7 +24,7 @@ Mesh mesh = buider.get();
 ```
 
 #### Using a `QuadEmitter`
-**FIXME:** This section is a stub.
+**FIXME:** This section is a stub, add info on `RenderMaterial`, `BlendMode`, class structure, `.spriteBake`, and other `QuadEmitter` methods.
 
 Example:
 ```java

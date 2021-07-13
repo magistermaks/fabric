@@ -1,5 +1,5 @@
 ## @ModifyArgs
-[Back](mixins.md)
+[Back](mixins.md) [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/org/spongepowered/asm/mixin/injection/ModifyArgs.html)
 
 Modifies multiple argument in method invocation. Select the target method with [@At](at.md) annotation. Marked method takes a single `Args` argument and returns `void`. After the `Args` argument it can also optionally take target method arguments. Must be placed in a [@Mixin](mixin.md) class. To modify a single argument see: [@ModifyArg](modify_arg.md).
 

@@ -1,5 +1,5 @@
 ## @Unique
-[Back](mixins.md)
+[Back](mixins.md) [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/org/spongepowered/asm/mixin/Unique.html)
 
 This annotation ensures that the method and field names never conflict with anything in the target class or with any method or field added to the target class by other mixins. Can be added to the mixin class definition to make every method in that mixin unique. Lean more about it in the **Extending** section of the [@Mixin](mixin.md) article. Don't use on non-private methods or fields.
 

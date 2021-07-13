@@ -14,4 +14,4 @@ This series of articles tries to document the vast Fabric API and related system
 	* [Models](rendering/models/models.md)
 	* [Renderer Access](rendering/renderer.md)
 	* [Events](rendering/events.md)
-	* ~~[Rendering]~~
+	* [Rendering](rendering/rendering/rendering.md)

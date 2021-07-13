@@ -1,7 +1,7 @@
 ## Mixins
 [Back](/README.md)
 
-This article describes how to use Mixins to effectively modify existing classes. Note: The method modifications listed in these articles are more of a reference of what the code effectively does, and not exactly how it does it.
+This article describes how to use Mixins to effectively modify existing classes. Note: The method modifications listed in these articles are more of a reference of what the code effectively does, and not exactly how it does it. You can see mixin's javadoc here: [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/index.html)
 
 #### Table of Contents
 * Basics

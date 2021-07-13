@@ -1,5 +1,5 @@
 ## @Overwrite
-[Back](mixins.md)
+[Back](mixins.md) [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/org/spongepowered/asm/mixin/Overwrite.html)
 
 Replaces a method of the same name, arguments and return type. Must be placed in a [@Mixin](mixin.md) class.
 

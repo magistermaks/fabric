@@ -1,5 +1,5 @@
 ## @Constant
-[Back](mixins.md)
+[Back](mixins.md) [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/org/spongepowered/asm/mixin/injection/Constant.html)
 
 Used to select a constant, for usage see: [@ModifyConstant](modify_constant.md).
 

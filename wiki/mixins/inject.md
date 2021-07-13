@@ -1,5 +1,5 @@
 ## @Inject
-[Back](mixins.md)
+[Back](mixins.md) [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/org/spongepowered/asm/mixin/injection/Inject.html)
 
 Injects code into the target method at the specified position. Must be placed in a [@Mixin](mixin.md) class.
 

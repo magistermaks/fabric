@@ -1,5 +1,5 @@
 ## @Pseudo
-[Back](mixins.md)
+[Back](mixins.md) [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/org/spongepowered/asm/mixin/Pseudo.html)
 
 When you want to mixin into a class that may not exist at runtime (e.g. into other mods) this annotation can be added to a mixin class, then no error would be raised if the target class is not found. 
 

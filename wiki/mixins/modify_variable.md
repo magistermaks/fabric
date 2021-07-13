@@ -1,5 +1,5 @@
 ## @ModifyVariable
-[Back](mixins.md)
+[Back](mixins.md) [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/org/spongepowered/asm/mixin/injection/ModifyVariable.html)
 
 Modifies local variable at the selected point. The annotated takes a single argument - the old value and returns the new value. It can also optionally take the target method arguments by adding them at the end of the argument list. Must be placed in a [@Mixin](mixin.md) class.
 
