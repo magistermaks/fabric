@@ -15,14 +15,18 @@ Selects an injection point, for usage see: [@Inject](inject.md).
 | NEW | Selects constructor calls | Before | `target` class or constructor signature |
 | INVOKE_STRING | Selects method calls which takes a single string and returns void | Before | TODO |
 | JUMP | Selects jump calls: if, try/catch, break, etc | Before | takes an optional arg `opcode` |
-| CONSTANT | selects a constant, similar to [@Constant](constant.md) | Before | takes named args from `args` |
+| CONSTANT | Selects a constant, similar to [@Constant](constant.md) | Before | takes named args from `args` |
+| STORE | Selects a write to local variable, useful for [@ModifyVariable](modify_variable.md) | **After** | N/A |
+| LOAD | Selects a read from local variable, useful for [@ModifyVariable](modify_variable.md) | Before | N/A |
 
 Where `Offset` indicates if the injection point is before or after the section point.
+
+#### Ordinal
 If the selection results in a multiple injection point, `ordinal` property can be used to specify the index of the desired injection point. default value is -1, allowing multiple injection points.
 
 Example:
 ```java
-// Selectes second return instruction
+// Selects *second* return instruction
 @At(value="RETURN", ordinal=1)
 ```
 
@@ -44,5 +48,14 @@ the `shift` property can be set to:
 Example:
 ```java
 // Selects one instruction after a method call to 'func()'
-@At(value="INVOKE", target="func()V" shift=Shift.BY, by=2)
+@At(value="INVOKE", target="func()V", shift=Shift.BY, by=2)
+```
+
+#### Selecting a Constant
+the `CONSTANT` value takes additional arguments from the `args` string, learn more about selecting a constant here: [@Constant](constant.md).
+
+Example:
+```java
+// Selects one instruction before a constant value '200'
+@At(value="CONSTANT", args="intValue=200")
 ```

@@ -1,7 +1,7 @@
-## Queterions
+## Quaternions
 [Back](rendering.md)
 
-Queterions are used to represent rotation in 3D space, they avoid the [Gimbal Lock](https://en.wikipedia.org/wiki/Gimbal_lock) problem that can occure when using roll, pitch and yaw. Queterions rely on some fairly complicated math, because of that most people treat them as "black-boxes", and use them without understanding the math involved.
+Quaternions are used to represent rotation in 3D space, they avoid the [Gimbal Lock](https://en.wikipedia.org/wiki/Gimbal_lock) problem that can occur when using roll, pitch and yaw. Quaternions rely on some fairly complicated math, because of that most people treat them as "black-boxes", and use them without understanding the math involved.
 
 ```java
 // to rotate around the Y axis:

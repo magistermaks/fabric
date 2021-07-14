@@ -21,7 +21,7 @@ matrices.multiply( /* quaternion */ )
 matrices.pop();
 ```
 
-Queterions are used to represent rotation in 3D space, learn about them here: [Queterions](quaternions.md).
+Quaternions are used to represent rotation in 3D space, learn about them here: [Quaternions](quaternions.md).
 
 A reference to a particular state of the matrix stack can be obtained by calling `peek()`:
 

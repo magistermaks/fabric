@@ -45,3 +45,5 @@ apis
 renderer
 renderers
 javadocs
+quaternions
+gimbal

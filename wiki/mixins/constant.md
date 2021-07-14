@@ -28,5 +28,4 @@ To match other constant values use those selectors:
 
 `ordinal` property can be used to specify the index of the desired constant. default value is -1, allowing multiple constants to be selected.
 
-#### Using as [@At](at.md) selector
-TODO
+Learn how to select a constant value with the @At selector here: [@At](at.md).
