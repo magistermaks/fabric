@@ -11,7 +11,7 @@ ColorProviderRegistry.BLOCK.register( (blockState, blockRenderView, blockPos, ti
 ColorProviderRegistry.ITEM.register( (itemStack, tintIndex) -> 0xFF0000, items... );
 ```
 
-**Note:** It's also required to add a tint index to every face in the mode file using the `tintindex` property.
+**Note:** It's also required to add a tint index to every face in the model file using the `tintindex` property.
 
 Example:
 ```json

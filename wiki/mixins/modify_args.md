@@ -7,7 +7,7 @@ Example:
 ```java
 @ModifyArgs(target="target(F)V", at=@At(value="INVOKE", target="Lnet/example/Example;method(III)V"))
 private void modifyArgs(Args args, float f) {
-	// the 'float f' is an optional target's ('void target(float f)') method argument.
+	// the 'float f' is an optional argument of 'void target(float f)' method.
 	
 	args.set(0, 42);
 	args.set(1, args.get(1) * 2);

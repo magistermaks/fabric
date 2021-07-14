@@ -9,7 +9,7 @@ Example:
 ```java
 @Overwrite
 public void target( int arg ) {
-	// this will replace `target` method in the target class
+	// this will replace 'target' method in the target class
 }
 ```
 
