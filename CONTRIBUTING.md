@@ -13,13 +13,12 @@ The style of the wiki should be kept consistent on all articles.
 * Use links, every time you reference something provide a relevant link
 * Don't copy-paste, write your own explanations, don't copy javadocs or other wikis, _especially from the Official Fabric Wiki whose license is incompatible!_
 * Avoid using _we_, _our_.
-* Don't use the \` char (backtick) inside of multiline block comments
+* Don't use the \` char (backtick) inside of multiline code blocks
 * Use proper Github markdown - see [here](https://guides.github.com/features/mastering-markdown/).
 * Check your grammar, you can use the `utils/check.sh` script to scan the repo for possible errors, add false-positives to `utils/exceptions.dict`.
 * Use `TODO` and `FIXME` to mark unfinished/invalid sections.
 
 #### What can i do?
-We accept any help, but if you don't have an idea what to do, you can run the spell checking script `utils/check.sh`, it will list all usages of words `TODO` and `FIXME`
- as warnings. 
+We accept any help, but if you don't have an idea what to do, you can run the spell checking script `utils/check.sh`, it will list all usages of words `TODO` and `FIXME` as warnings. 
  
 _This article, and the wiki as a whole is still very WIP, expect unannounced changes._

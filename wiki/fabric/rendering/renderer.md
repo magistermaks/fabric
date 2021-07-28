@@ -23,7 +23,7 @@ RendererAccess.INSTANCE.registerRenderer(Renderer plugin);
 
 **FIXME:** This article is a stub, add links and better explanations  
 
-* `meshBuilder()` returns new Mesh builder, used to create [Meshes](quads/mesh.md) and [Baked Models](models/baked.md) with enhanced features.
+* `meshBuilder()` returns new Mesh builder, used to create meshes and [Baked Models](models/baked.md) with enhanced features.
 * `materialFinder()` used to get new Material Finders.
 * `registerMaterial(id, material)` used to register a `RenderMaterial`.
 * `materialById(id)` used to get registered material by id.

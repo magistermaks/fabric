@@ -16,8 +16,8 @@ Registry.register(Registry.ITEM, new Identifier("modid:example"), EXAMPLE);
 
 The `EXAMPLE` item will now be available in game with the `\give @a modid:example` command.
 
-To give the item some visuals use [JSON Item Models](../../json/item.md) for simple models. Or [Item Renderers](../dynamic/item.md) for items with dynamic or animated elements. [Baked Models](../rendering/models/models.md) can also be used for a performant compromise between Item Renderers and static JSON Models.
+To give the item some visuals use [JSON Item Models](/wiki/json/item.md) for simple models. Or [Item Renderers](../rendering/dynamic/item.md) for items with dynamic or animated elements. [Baked Models](../rendering/models/models.md) can also be used for a performant compromise between Item Renderers and static JSON Models.
 
 #### Recipes
-To add a crafting recipe for your item use [JSON Recipes](../../json/recipe.md).
+To add a crafting recipe for your item use ~~[JSON Recipes](../../json/recipe.md)~~.
 **TODO**: link dynamic recipes

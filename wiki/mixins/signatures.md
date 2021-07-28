@@ -3,7 +3,7 @@
 
 Signatures in java are strings identifying methods, classes, and fields, those strings are commonly used when working with mixins, this article describes how those strings are formatted and how to write them based on a method/field definition. 
 
-**Note:** If you are using IDEA with the [Minecraft Development](https://github.com/minecraft-dev/MinecraftDev) as recommended by our [Setup Guide](/basics/setup/ide.md) you can right click on a method or field usage/definition and select `Copy Mixin Targe Reference` to get the correct signature.
+**Note:** If you are using IDEA with the [Minecraft Development](https://github.com/minecraft-dev/MinecraftDev) as recommended by our ~~[Setup Guide](/basics/setup/ide.md)~~ you can right click on a method or field usage/definition and select `Copy Mixin Targe Reference` to get the correct signature.
 
 * Method signature: `<qualifier><name>(<args>)<return>`
 * Field signature: `<qualifier><name>:<return>`

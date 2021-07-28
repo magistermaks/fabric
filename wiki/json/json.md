@@ -1,5 +1,5 @@
 ## JSON
-[Back](../README.md)
+[Back](/README.md)
 
 This section describes how to create specific JSON resources. **TODO**: write our own version
 

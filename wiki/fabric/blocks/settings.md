@@ -3,7 +3,7 @@
 
 Block settings are passed to the `Block` constructor, they add (some) properties to a block, learn more about block registration here: [Blocks](block.md).
 
-Block settings are always derived from a [Material](../materials/Material.md) or other block settings with the `of()` or `copyOf()` methods. The settings object can be reused.
+Block settings are always derived from a [Material](material.md) or other block settings with the `of()` or `copyOf()` methods. The settings object can be reused.
 
 Example:
 ```java

@@ -15,7 +15,7 @@ Registry.register(Registry.BLOCK, new Identifier("modid", "example"), EXAMPLE);
 
 The `EXAMPLE` block will now be available in game with the `\setblock ~ ~ ~ modid:example` command to learn how to add an item to this block see: [Block Items](item.md).
 
-To give the block some visuals use [JSON Block Models](../../json/block.md) for simple models like fences, redstone, full blocks etc. Or [Block Entity Renderers](../dynamic/block.md) for blocks with dynamic or animated elements. [Baked Models](../rendering/models/models.md) can also be used for a performant compromise between Block Entity Renderers and static JSON Models.
+To give the block some visuals use [JSON Block Models](/wiki/json/block.md) for simple models like fences, redstone, full blocks etc. Or [Block Entity Renderers](../rendering/dynamic/block.md) for blocks with dynamic or animated elements. [Baked Models](../rendering/models/models.md) can also be used for a performant compromise between Block Entity Renderers and static JSON Models.
 
 #### Custom Block Classes
 To add more advanced properties to a block a custom class must be created, and extend the `Block` class.

@@ -21,7 +21,7 @@ Field: `<access>   field   <class>   <name>   <descriptor>`
 
 `<class>` is the class in with target is located
 `<name>` is the name of the filed or method
-`<descriptor>` is the field or method descriptor (the entire part after the method name in its [Signature](signature.md))
+`<descriptor>` is the field or method descriptor (the entire part after the method name in its [Signature](signatures.md))
 
 The location of Access Widener must be specified in `build.gradle` in `minecraft` task:
 ```gradle
