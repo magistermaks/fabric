@@ -1,14 +1,22 @@
 ## Vertex Consumers
 [Back](rendering.md)
 
-They allow for rendering geometry into a selected [Render Layer](../layer.md), `VertexConsumerProvider` is an object provided by the game, to then get `VertexConsumer` use the `VertexConsumerProvider.getBuffer(LAYER)`:
+They allow for rendering geometry into a selected [Render Layer](../layer.md), `VertexConsumerProvider` is an object provided by the game, to then get `VertexConsumer` use the `VertexConsumerProvider.getBuffer(LAYER)`, `LAYER` can then reference the texture to apply to rendered quads. To use a Sprite as a texture call `SpriteIdentifier#getVertexConsumer( consumers, LAYER_SUPPLIER )`.
 
 Example:
 ```java
 VertexConsumerProvider consumers = /* ... */;
+Identifier TEXTURE = /* ... */;
+SpriteIdentifier SPRITE = /* ... */;
 
-// solid layer
+// solid layer, no texture
 VertexConsumer consumer = consumers.getBuffer(RenderLayer.getSolid()); 
+
+// cutout layer, textured
+VertexConsumer consumer = consumers.getBuffer(RenderLayer.getEntityCutout(TEXTURE)); 
+
+// cutout layer, textured (sprite)
+VertexConsumer consumer = SPRITE.getVertexConsumer(consumers, RenderLayer::getEntityCutout);
 ```
 
 #### Rendering
@@ -57,11 +65,8 @@ int light = WorldRenderer.getLightmapCoordinates(world, pos);
 
 // emit 4 vertices - one quad
 consumer.vertex(model, -0.5f, -0.5f, -0.5f).color(r, g, b, a).texture(0, 0).overlay(overlay).light(light).normal(normal, 0.0F, 1.0F, 0.0F).next();
-
 consumer.vertex(model, 0.5f, -0.5f, -0.5f).color(r, g, b, a).texture(1, 0).overlay(overlay).light(light).normal(normal, 0.0F, 1.0F, 0.0F).next();
-
 consumer.vertex(model, 0.5f, -0.5f, 0.5f).color(r, g, b, a).texture(1, 1).overlay(overlay).light(light).normal(normal, 0.0F, 1.0F, 0.0F).next();
-
 consumer.vertex(model, -0.5f, -0.5f, 0.5f).color(r, g, b, a).texture(0, 1).overlay(overlay).light(light).normal(normal, 0.0F, 1.0F, 0.0F).next();
 
 matrices.pop();

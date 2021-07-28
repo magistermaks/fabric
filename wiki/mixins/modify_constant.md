@@ -1,7 +1,7 @@
 ## @ModifyConstant
 [Back](mixins.md) [Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/org/spongepowered/asm/mixin/injection/ModifyConstant.html)
 
-Allows replaceing a constant value like - `20`, `true`, `PlayerClass`, `40.0f`, `"Hello"`. The annotated method returns new value of the constant and takes the old one as an argument. It can also optionally take the target method arguments by adding them at the end of the argument list. Must be placed in a [@Mixin](mixin.md) class.
+Allows replacing a constant value like - `20`, `true`, `PlayerClass`, `40.0f`, `"Hello"`. The annotated method returns new value of the constant and takes the old one as an argument. It can also optionally take the target method arguments by adding them at the end of the argument list. Must be placed in a [@Mixin](mixin.md) class.
 
 **Warning:** `boolean` values should be modified using the `int` type, where `true` is `1`, and `false` is `0`
 

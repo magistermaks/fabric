@@ -7,6 +7,7 @@
 * [Mixins](wiki/mixins/mixins.md)
 * [Links](wiki/links/links.md)
 * [Fabric](wiki/fabric/fabric.md)
+* [Assets](wiki/json/json.md)
 
 #### Contributing
 Are you interested in contributing to the wiki? See: [The Contributing Guide](CONTRIBUTING.md)
