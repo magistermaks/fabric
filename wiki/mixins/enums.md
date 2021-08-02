@@ -31,18 +31,21 @@ abstract class TargetEnumMixin {
 
 	// access the private constructor
 	// the first two args (name and id) are added to enum constructors by java
+	// if you are using McDev plugin add @SuppressWarnings("InvokerTarget")
 	@Invoker("<init>(Ljava/lang/String;IIII)")
 	private static TargetEnum init(String name, int id, int r, int g, int b) {
 		throw new AssertionError(); // unreachable statement
 	}
 	
 	// synthetic field, find the name in bytecode
+	// if you are using McDev plugin add @SuppressWarnings("ShadowTarget")
 	@Shadow
 	@Final
 	@Mutable
-    private static TargetEnum[] field_1234;
+	private static TargetEnum[] field_1234;
 	
 	// add new property from the static constructor
+	// if you are using McDev plugin add @SuppressWarnings("UnresolvedMixinReference")
 	@Inject(method="<clinit>", at=@At("TAIL"))
 	private static void clinit(CallbackInfo ci) {
 		ArrayList<TargetEnum> values =  new ArrayList<>(Arrays.asList(field_1234);
@@ -68,7 +71,7 @@ Accessing the new value:
 ```java
 ExtendedTargetEnum.PINK;
 TargetEnum.valueOf("PINK");
-AxolotlEntity.Variant.values(); // get all values; including PINK
+TargetEnum.values(); // get all values; including PINK
 ```
 
 > This article is based on the great [Gist](https://gist.github.com/LlamaLad7/0b553d5ae04e4eb44d3a1e8558be9151) by `LlamaLad7`

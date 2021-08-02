@@ -43,7 +43,7 @@ List of injector and their usages:
 | [@Overwrite](overwrite.md) | used to replace the body of a method |
 | [@Inject](inject.md) | used to inject a snipped of code into a method |
 | [@ModifyConstant](modify_constant.md) | used to modify a constant value like `true` or `123` inside of target method |
-| [@ModifyVariable](modify_variable) | used to assign a new value to a local variable inside of target method |
+| [@ModifyVariable](modify_variable.md) | used to assign a new value to a local variable inside of target method |
 | [@ModifyArg](modify_arg.md) | used to replace an argument of a method call inside of target method |
 | [@ModifyArgs](modify_args.md) | used to replace multiple arguments of a method call inside of target method |
 | [@Redirect](redirect.md) | used to replace a method call inside of target method |

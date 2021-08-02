@@ -30,33 +30,33 @@ public class ExampleMixinPlugin implements IMixinConfigPlugin {
 	
 	// decide if mixin 'mixinClassName' targeting 'targetClassName' should be applied
 	// return true to apply @Override
-    public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
+	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
 	
 	}
 	
 	// allows for removing mixins based on their target by removing that target from 'myTargets'
 	// 'otherTargets' contains the list of all other targets of all other mixins
-    public void acceptTargets(Set<String> myTargets, Set<String> otherTargets) {
+	public void acceptTargets(Set<String> myTargets, Set<String> otherTargets) {
 
-    }
+	}
 
-    // return a list of additional mixin classes to apply
+	// return a list of additional mixin classes to apply
 	// or return null to only use the ones listed in mixin.json
-    public List<String> getMixins() {
-        return null;
-    }
+	public List<String> getMixins() {
+		return null;
+	}
 	
 	// called before the class is mixed
 	// can be used for some ASM fuckery
 	public void preApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {
 
-    }
+	}
 
-    // called after the class is mixed
+	// called after the class is mixed
 	// can be used for some ASM fuckery
-    public void postApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {
+	public void postApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {
 
-    }
+	}
 	
 }
 ```

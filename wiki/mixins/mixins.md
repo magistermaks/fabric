@@ -27,7 +27,7 @@ This article describes how to use Mixins to effectively modify existing classes.
 	* [@Invoker](invoker.md)
 	* [@Accessor](accessor.md)
 * Advanced/Others
-	* ~~[Mixin Plugins](plugins.md)~~
+	* [Mixin Plugins](plugins.md)
 	* [Modifying Enums](enums.md)
 
 Mixin are a powerful tool but sometimes something more is needed. [Access Wideners](access_wideners.md) are not a part of the mixin library, but a tool added in Fabric Loader 0.8,
