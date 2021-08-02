@@ -12,7 +12,7 @@ The style of the wiki should be kept consistent on all articles.
 * Stay on topic, full examples are good but make sure that they don't spiral into explaining other unrelated things
 * Use links, every time you reference something provide a relevant link
 * Don't copy-paste, write your own explanations, don't copy javadocs or other wikis, _especially from the Official Fabric Wiki whose license is incompatible!_
-* Avoid using _we_, _our_.
+* Try to avoid using _we_ and _our_.
 * Don't use the \` char (backtick) inside of multiline code blocks
 * Use proper Github markdown - see [here](https://guides.github.com/features/mastering-markdown/).
 * Check your grammar, you can use the `utils/check.sh` script to scan the repo for possible errors, add false-positives to `utils/exceptions.dict`.
@@ -20,5 +20,14 @@ The style of the wiki should be kept consistent on all articles.
 
 #### What can i do?
 We accept any help, but if you don't have an idea what to do, you can run the spell checking script `utils/check.sh`, it will list all usages of words `TODO` and `FIXME` as warnings. 
+
+#### Why?
+"*Isn't there an XYZ Wiki? Why don't you contribute to that?*" I hear you ask, actually there are reasons why I started this project:
+* Regarding *Fabric Wiki*:
+	* The wiki system used by Fabric Wiki is terrible in my opinion
+	* Markdown/Github combo is easier to maintain and contribute to (for example: branches can be used to create separate wikis for separate versions)
+	* Fabric Wiki uses a restrictive non-foss license CC BY-NC-SA 4.0 (no commercial use), mine is free, some peoples (including me) value that
+* Regarding *Mixin Cheatsheet*
+	* It a cheat sheet, while i prefer more in-depth explanations
  
-_This article, and the wiki as a whole is still very WIP, expect unannounced changes._
+> This article, and the wiki as a whole is still very WIP, expect unannounced changes.
