@@ -13,7 +13,7 @@ Selects an injection point, for usage see: [@Inject](inject.md).
 | INVOKE_ASSIGN | Selects method calls that get assigned to a variable | **After** | `target` full method signature |
 | FIELD | Selects reading and writing to class fields | Before | `target` full field signature |
 | NEW | Selects constructor calls | Before | `target` class or constructor signature |
-| INVOKE_STRING | Selects method calls which take a single string and return void | Before | TODO |
+| INVOKE_STRING | Selects method calls which take a single string and return void | Before | `target` full method signature |
 | JUMP | Selects jump calls: if, try/catch, break, etc | Before | takes an optional arg `opcode` |
 | CONSTANT | Selects a constant, similar to [@Constant](constant.md) | Before | takes named args from `args` |
 | STORE | Selects a write to local variable, useful for [@ModifyVariable](modify_variable.md) | **After** | N/A |

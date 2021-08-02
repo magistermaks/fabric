@@ -5,7 +5,7 @@ Do you have some knowledge you would like to share? Fix some errors or typos? Or
 #### Style
 The style of the wiki should be kept consistent on all articles.
 * Avoid using ordered lists, if the order of the points is not important. This can minimize the amount of Merge Conflicts.
-* The first line must be a title of the article, the second, a link to go back to the parent article, and third must be empty.
+* The first line must be a title of the article. The second, a link to go back to the parent article, it can also contain related links - like a link to java doc or source material. Leave the third line empty.
 * Keep all the resources (pictures, etc) in the `/assets` directory.
 * Make sure all articles are approachable even for people with very limited knowledge, provide links to articles about all mentioned concepts.
 * Provide full examples, examples are usually the best way to describe something.
@@ -18,7 +18,7 @@ The style of the wiki should be kept consistent on all articles.
 * Check your grammar, you can use the `utils/check.sh` script to scan the repo for possible errors, add false-positives to `utils/exceptions.dict`.
 * Use `TODO` and `FIXME` to mark unfinished/invalid sections.
 
-#### What can i do?
+#### What can I do?
 We accept any help, but if you don't have an idea what to do, you can run the spell checking script `utils/check.sh`, it will list all usages of words `TODO` and `FIXME` as warnings. 
 
 #### Why?
@@ -28,6 +28,6 @@ We accept any help, but if you don't have an idea what to do, you can run the sp
 	* Markdown/Github combo is easier to maintain and contribute to (for example: branches can be used to create separate wikis for separate versions)
 	* Fabric Wiki uses a restrictive non-foss license CC BY-NC-SA 4.0 (no commercial use), mine is free, some peoples (including me) value that
 * Regarding *Mixin Cheatsheet*
-	* It a cheat sheet, while i prefer more in-depth explanations
+	* It's a cheat sheet, while I prefer more in-depth explanations
  
 > This article, and the wiki as a whole is still very WIP, expect unannounced changes.

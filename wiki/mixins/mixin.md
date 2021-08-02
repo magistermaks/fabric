@@ -35,6 +35,21 @@ class MixinClass {
 
 If you are trying to mixin into private class, or a class that doesn't exist at the compile time use `target` property to pass the class as a string: `@Mixin(target = "net/example/Example")`. _If the target class may be missing at the runtime remember to use [@Pseudo](pseudo.md) annotation._
 
+### Injectors Overview
+List of injector and their usages:
+
+| Annotation | Usage |
+| ---------- | ----- |
+| [@Overwrite](overwrite.md) | used to replace the body of a method |
+| [@Inject](inject.md) | used to inject a snipped of code into a method |
+| [@ModifyConstant](modify_constant.md) | used to modify a constant value like `true` or `123` inside of target method |
+| [@ModifyVariable](modify_variable) | used to assign a new value to a local variable inside of target method |
+| [@ModifyArg](modify_arg.md) | used to replace an argument of a method call inside of target method |
+| [@ModifyArgs](modify_args.md) | used to replace multiple arguments of a method call inside of target method |
+| [@Redirect](redirect.md) | used to replace a method call inside of target method |
+| [@Accessor](accessor.md) | used to call a private method in the target class |
+| [@Invoker](invoker.md) | used to access a private field in the target class |
+
 #### Using `this`
 To reference the target class with `this` and keep the compiler happy, we have to cast the mixin's `this` to a object (as the compiler wrongly thinks that `this` refers to `MixinClass`) and then to `TargetClass`.
 
