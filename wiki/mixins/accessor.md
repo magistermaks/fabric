@@ -39,6 +39,9 @@ public class TargetMixin {
 	@Accessor("field")
 	int getField();
 
+	@Accessor("field")
+	void setField(int value);
+
 }
 ```
 

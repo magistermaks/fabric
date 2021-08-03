@@ -36,7 +36,7 @@ class MixinClass {
 If you are trying to mixin into private class, or a class that doesn't exist at the compile time use `target` property to pass the class as a string: `@Mixin(target = "net/example/Example")`. _If the target class may be missing at the runtime remember to use [@Pseudo](pseudo.md) annotation._
 
 ### Injectors Overview
-List of injector and their usages:
+List of injectors (and other annotations) and their usages:
 
 | Annotation | Usage |
 | ---------- | ----- |

@@ -13,4 +13,4 @@
 Are you interested in contributing to the wiki? See: [The Contributing Guide](CONTRIBUTING.md)
 
 #### License 
-This wiki is licensed under Attribution-ShareAlike 4.0 International, which can be view here: [License](/LICENSE.md)
+This wiki is licensed under Attribution-ShareAlike 4.0 International, which can be viewed here: [License](/LICENSE.md)
