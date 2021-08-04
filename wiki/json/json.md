@@ -3,7 +3,7 @@
 
 This section describes how to create specific JSON resources. **TODO**: write our own version
 
-#### Table of Contents
+### Table of Contents
 * Assets
 	* [Block Models](block.md)
 	* [Item Models](item.md)

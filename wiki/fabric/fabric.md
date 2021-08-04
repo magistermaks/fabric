@@ -1,9 +1,9 @@
-## Fabric API
+# <u> Fabric API </u>
 [Back](/README.md)
 
 This series of articles tries to document the vast Fabric API and other game systems, `@Deprected` and outdated modules and APIs are not listed here in favor of their newer counterparts.
 
-#### Table of Contents
+### Table of Contents
 * Blocks
 	* [Adding Blocks](blocks/block.md)
 	* [Block States](blocks/states.md)

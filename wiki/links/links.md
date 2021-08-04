@@ -7,7 +7,7 @@ Links to external resources that may be found useful:
 * [Fabric Wiki](https://fabricmc.net/wiki)
 * [Mixin Javadoc](https://jenkins.liteloader.com/view/Other/job/Mixin/javadoc/index.html)
 
-#### Libraries
+### Libraries
 Useful fabric libraries:
 | Link | Categories |
 | ---- | ---------- |
@@ -16,7 +16,7 @@ Useful fabric libraries:
 | [Cardinal Components API](https://github.com/OnyxStudios/Cardinal-Components-API) | Data |
 | [ARRP](https://github.com/Devan-Kerman/ARRP) | Resources |
 
-#### References
+### References
 Open source mods that can be used as references:
 | Link | Categories |
 | ---- | ---------- |
