@@ -18,13 +18,13 @@ To match other constant values use those selectors:
 
 | Name | Description |
 | --- | --- |
-| @Constant(intValue=value) | Select integer `value` |
-| @Constant(floatValue=value) | Select float `value` |
-| @Constant(longValue=value) | Select long `value` |
-| @Constant(doubleValue=value) | Select double `value` |
-| @Constant(stringValue=value) | Select string `value` |
-| @Constant(classValue=value) | Select class `value` |
-| @Constant(nullValue=true) | Select null |
+| `@Constant(intValue=value)` | Select integer `value` |
+| `@Constant(floatValue=value)` | Select float `value` |
+| `@Constant(longValue=value)` | Select long `value` |
+| `@Constant(doubleValue=value)` | Select double `value` |
+| `@Constant(stringValue=value)` | Select string `value` |
+| `@Constant(classValue=value)` | Select class `value` |
+| `@Constant(nullValue=true)` | Select `null` |
 
 `ordinal` property can be used to specify the index of the desired constant. default value is -1, allowing multiple constants to be selected.
 

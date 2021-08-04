@@ -1,6 +1,8 @@
-import os
-import sys
-import marko
+
+# Copyright (c) 2020 magistermaks - MIT License (https://mit-license.org/)
+# Run: `python3 linkcheck.py path/to/file1.md path/to/file2.md <...>`
+
+from markdown import *
 
 links = []
 
@@ -15,13 +17,6 @@ def http( path ):
 	# but it would be nice to add some validation
 	return True
 
-class Strikethrough( marko.inline.InlineElement ):
-    pattern = r'~~ *(.+?) *~~'
-    parse_children = True
-
-class StrikethroughExtension:
-    elements = [Strikethrough]
-
 def append( path, link ):
 	if not link.startswith("http"):
 		link = ("" if link.startswith("/") else os.path.dirname(path) + "/") + link;
@@ -34,7 +29,7 @@ def append( path, link ):
 def process( path, ast ):
 
 	if hasattr(ast, 'children'):
-		for obj in ast.children :
+		for obj in ast.children:
 
 			if isinstance( obj, Strikethrough ):
 				return
@@ -44,13 +39,8 @@ def process( path, ast ):
 			else:
 				process( path, obj )
 	
-markdown = marko.Markdown(extensions=[StrikethroughExtension])
-sys.argv.pop(0)
-
-for path in sys.argv:
-
-	with open(path) as file:
-		process( path, markdown.parse(file.read()) )
+# begin execution
+markdown_read(process)
 
 errors = 0
 
