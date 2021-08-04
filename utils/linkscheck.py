@@ -1,16 +1,10 @@
 
 # Copyright (c) 2020 magistermaks - MIT License (https://mit-license.org/)
-# Run: `python3 linkcheck.py path/to/file1.md path/to/file2.md <...>`
+# Run: `python3 linkscheck.py path/to/file1.md path/to/file2.md <...>`
 
-from markdown import *
+from utils import *
 
 links = []
-
-def red(x):
-	return "\033[31m" + x + "\033[0m"
-
-def yellow(x):
-	return "\033[93m" + x + "\033[0m"
 
 def http( path ):
 	# currently we just trust external links
@@ -50,11 +44,11 @@ for entry in links:
 	if link.startswith("http"):
 		if not http(link):
 			errors += 1
-			print(red("error: ") + link + yellow(" from: ") + entry['path'])
+			error(link, entry['path'])
 	else:
 		if not os.path.exists( "./" + link ):
 			errors += 1
-			print(red("error: ") + link + yellow(" from: ") + entry['path'])
+			error(link, entry['path'])
 
 if errors > 0:
 	print("\nFound " + str(errors) + " errors!")

@@ -2,16 +2,9 @@
 # Copyright (c) 2020 magistermaks - MIT License (https://mit-license.org/)
 # Run: `python3 spellcheck.py path/to/file1.md path/to/file2.md <...>`
 
-from markdown import *
-from subprocess import Popen, PIPE, STDOUT
+from utils import *
 
 files = {}
-
-def red(x):
-	return "\033[31m" + x + "\033[0m"
-
-def yellow(x):
-	return "\033[93m" + x + "\033[0m"
 
 def append( path, text ):
 	if path in files:
@@ -38,18 +31,7 @@ def process( path, ast ):
 # begin execution
 markdown_read(process)
 
-exceptions = []
-with open("utils/exceptions.dict") as file:
-	lines = file.readlines()
-	lines = [line.rstrip("\n") for line in lines]
-
-	for line in lines:
-		exception = line.rstrip("\n")
-
-		if (len(exception) == 0) or (exception.startswith("#")):
-			continue
-
-		exceptions.append(exception)
+exceptions = load_exceptions()
 
 def check(error):
 	if error in exceptions:
@@ -65,25 +47,22 @@ def check(error):
 
 errors = 0
 
-for key in files:
+for path in files:
 
 	# let's just give up on lawyer-speak
-	if key.endswith("LICENSE.md"):
+	if path.endswith("LICENSE.md"):
 		continue
 
-	aspell = Popen(['aspell', '--lang=en_US', 'list'], stdout=PIPE, stdin=PIPE, stderr=PIPE)
-	output = aspell.communicate(input=files[key].encode())[0].decode().lower().splitlines()
+	output = shell("aspell --lang=en_US list", files[path]).lower().splitlines()
 
-	for error in output:
-		if not check(error):
-			type = red("error: ")
+	for entry in output:
+		if not check(entry):
 
-			if error == "todo" or error == "fixme":
-				type = yellow("warning: ")
+			if entry == "todo" or entry == "fixme":
+				warn(entry, path)
 			else:
 				errors += 1
-
-			print(type + error + yellow(" from: ") + key)
+				error(entry, path)
 
 if errors > 0:
 	print("\nFound " + str(errors) + " errors!")

@@ -22,10 +22,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run test scripts
         run: |
-          echo Preparing...
+          echo -e "\n\033[1;36mPreparing...\033[0m"
           sudo apt-get install aspell
           pip3 install marko
-          echo Running 'spellcheck.py'...
-          find -name "*.md" | xargs python3 -B utils/spellcheck.py
-          echo Running 'linkcheck.py'...
-          find -name "*.md" | xargs python3 -B utils/linkcheck.py
+          utils/check.sh spell
+          utils/check.sh links

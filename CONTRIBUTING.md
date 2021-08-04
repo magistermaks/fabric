@@ -15,11 +15,11 @@ The style of the wiki should be kept consistent on all articles.
 * Try to avoid using _we_ and _our_.
 * Don't use the \` char (backtick) inside of multiline code blocks
 * Use proper Github markdown - see [here](https://guides.github.com/features/mastering-markdown/).
-* Check your grammar, you can use the `utils/check.sh` script to scan the repo for possible errors, add false-positives to `utils/exceptions.dict`.
+* Check your grammar, you can use the `utils/check.sh spell` command to scan the repo for possible errors, add false-positives to `utils/exceptions.dict`.
 * Use `TODO` and `FIXME` to mark unfinished/invalid sections.
 
 #### What can I do?
-We accept any help, but if you don't have an idea what to do, you can run the spell checking script `utils/check.sh`, it will list all usages of words `TODO` and `FIXME` as warnings. 
+We accept any help, but if you don't have an idea what to do, you can run the spell checking script `utils/check.sh spell`, it will list all usages of words `TODO` and `FIXME` as warnings.
 
 #### Why?
 "*Isn't there an XYZ Wiki? Why don't you contribute to that?*" I hear you ask, actually there are reasons why I started this project:
