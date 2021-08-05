@@ -1,5 +1,5 @@
 
-# Copyright (c) 2020 magistermaks - MIT License (https://mit-license.org/)
+# Copyright (c) 2021 magistermaks - MIT License (https://mit-license.org/)
 # Internal utility
 
 import os
@@ -34,10 +34,7 @@ def load_exceptions():
 	exceptions = []
 
 	with open("utils/exceptions.dict") as file:
-		lines = file.readlines()
-		lines = [line.rstrip("\n") for line in lines]
-
-		for line in lines:
+		for line in file.readlines():
 			exception = line.rstrip("\n")
 
 			if (len(exception) == 0) or (exception.startswith("#")):
@@ -64,7 +61,17 @@ def _yellow(x):
 def warn(msg, path):
 	print(_yellow("warning: ") + msg + _yellow(" from: ") + path)
 	
+_error_count = 0
 
 def error(msg, path):
+	global _error_count
 	print(_red("error: ") + msg + _yellow(" from: ") + path)
+	_error_count += 1
+
+def die():
+	if _error_count > 0:
+		print("\nFound " + str(_error_count) + " errors!")
+		exit(1)
+	else:
+		exit(0)
 

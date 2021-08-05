@@ -49,11 +49,12 @@ Example:
 ```java
 Block EXAMPLE_BLOCK = new Block(
 
-	// settings; derived from material METAL, mark non-opaque, and that
-	// the effective tool for this block is the player hand
+	// settings; derived from material METAL, mark non-opaque, light level 5
+	// the effective tool for this block is a pickaxe
 	FabricBlockSettings.of(Material.METAL)
-	.nonOpaque()
-	.breakByHand(true)
-	
+		.nonOpaque()
+		.luminance(5)
+		.breakByTool(FabricToolTags.PICKAXES)
+		
 );
 ```

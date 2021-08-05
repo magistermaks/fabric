@@ -1,5 +1,5 @@
 
-# Copyright (c) 2020 magistermaks - MIT License (https://mit-license.org/)
+# Copyright (c) 2021 magistermaks - MIT License (https://mit-license.org/)
 # Run: `python3 spellcheck.py path/to/file1.md path/to/file2.md <...>`
 
 from utils import *
@@ -45,8 +45,6 @@ def check(error):
 
 	return False;
 
-errors = 0
-
 for path in files:
 
 	# let's just give up on lawyer-speak
@@ -61,12 +59,7 @@ for path in files:
 			if entry == "todo" or entry == "fixme":
 				warn(entry, path)
 			else:
-				errors += 1
 				error(entry, path)
 
-if errors > 0:
-	print("\nFound " + str(errors) + " errors!")
-	exit(1)
-else:
-	exit(0)
+die()
 

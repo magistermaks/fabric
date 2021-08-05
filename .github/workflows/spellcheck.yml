@@ -27,3 +27,4 @@ jobs:
           pip3 install marko
           utils/check.sh spell
           utils/check.sh links
+          utils/check.sh style

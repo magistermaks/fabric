@@ -1,5 +1,5 @@
 
-# Copyright (c) 2020 magistermaks - MIT License (https://mit-license.org/)
+# Copyright (c) 2021 magistermaks - MIT License (https://mit-license.org/)
 # Run: `python3 linkscheck.py path/to/file1.md path/to/file2.md <...>`
 
 from utils import *
@@ -36,23 +36,15 @@ def process( path, ast ):
 # begin execution
 markdown_read(process)
 
-errors = 0
-
 for entry in links:
 	link = entry['link']
 
 	if link.startswith("http"):
 		if not http(link):
-			errors += 1
 			error(link, entry['path'])
 	else:
 		if not os.path.exists( "./" + link ):
-			errors += 1
 			error(link, entry['path'])
 
-if errors > 0:
-	print("\nFound " + str(errors) + " errors!")
-	exit(1)
-else:
-	exit(0)
+die()
 
