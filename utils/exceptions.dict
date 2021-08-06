@@ -6,6 +6,7 @@ nbt
 redstone
 minecraft
 netherrite
+enchantability
 
 # mixin stuff
 modifyconstant
@@ -50,4 +51,6 @@ decompiled
 initializer
 apis
 repo
+axe
+chestplate
 

@@ -15,6 +15,8 @@ This series of articles tries to document the vast Fabric API and other game sys
 	* [Item Settings](items/settings.md)
 	* [Item Groups](items/group.md)
 	* [Food Items](items/food.md)
+	* [Tool Items](items/tool.md)
+	* [Armor Items](items/armor.md)
 * ~~Events~~
 * Rendering
 	* [Color Providers](rendering/color_providers.md)

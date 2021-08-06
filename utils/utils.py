@@ -50,22 +50,22 @@ def shell(command, stdin):
 	return process.communicate(input=stdin.encode())[0].decode()
 
 
-def _red(x):
+def red(x):
 	return "\033[31m" + x + "\033[0m"
 
 
-def _yellow(x):
+def yellow(x):
 	return "\033[93m" + x + "\033[0m"
 
 
 def warn(msg, path):
-	print(_yellow("warning: ") + msg + _yellow(" from: ") + path)
+	print(yellow("warning: ") + msg + yellow(" from: ") + path)
 	
 _error_count = 0
 
 def error(msg, path):
 	global _error_count
-	print(_red("error: ") + msg + _yellow(" from: ") + path)
+	print(red("error: ") + msg + yellow(" from: ") + path)
 	_error_count += 1
 
 def die():

@@ -19,10 +19,13 @@ FoodComponent food = new FoodComponent.Builder()
 
 Example:
 ```java
-new FoodComponent.Builder()
+FoodComponent FOOD_COMPONENT = new FoodComponent.Builder()
 	.hunger(1).
 	.saturationModifier(0.6F)
 	.statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 600, 0), 0.8F)
 	.meat()
-	.build()
+	.build();
+	
+// create the food item
+Item FOOD_ITEM = new Item( new FabricItemSettings().food(FOOD_COMPONENT) );
 ```

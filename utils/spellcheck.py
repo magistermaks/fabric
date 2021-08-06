@@ -59,7 +59,14 @@ for path in files:
 			if entry == "todo" or entry == "fixme":
 				warn(entry, path)
 			else:
-				error(entry, path)
+				try:
+					suggestions = shell("aspell --lang=en_US pipe", entry).splitlines()[1].split(":")[1].strip().split(", ")[:3]
+					suggestion = yellow(" did you mean: ") + " ".join(suggestions)
+				except:
+					suggestion = ""
+					pass
+
+				error(entry + suggestion, path)
 
 die()
 
