@@ -7,7 +7,7 @@ To create a new tool a `ToolMaterial` will be needed first, this can be one of t
 
 Example:
 ```java
-public class ExampleMaterial implements ToolMaterial {
+public class ExampleToolMaterial implements ToolMaterial {
 
 	// the base number of uses a tool has
 	public int getDurability() {
@@ -87,6 +87,8 @@ static final class PublicHoeItem extends HoeItem {
 Then, new tool items can be easy created:
 
 ```java
+ToolMaterial MATERIAL = new ExampleToolMaterial();
+
 public static ToolItem SHOVEL = new ShovelItem(MATERIAL, 1.0f, -3.0F, new FabricItemSettings().group(ItemGroup.TOOLS));
 public static ToolItem SWORD = new SwordItem(MATERIAL, 3, -2.4F, new FabricItemSettings().group(ItemGroup.COMBAT));
 public static ToolItem PICKAXE = new PublicPickaxeItem(MATERIAL, 2, -2.8F, new FabricItemSettings().group(ItemGroup.TOOLS));

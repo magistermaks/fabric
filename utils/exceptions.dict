@@ -7,6 +7,9 @@ redstone
 minecraft
 netherrite
 enchantability
+knockback
+chainmail
+chestplate
 
 # mixin stuff
 modifyconstant
@@ -52,5 +55,5 @@ initializer
 apis
 repo
 axe
-chestplate
+hardcoded
 
