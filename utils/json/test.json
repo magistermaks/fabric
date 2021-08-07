@@ -1,0 +1,62 @@
+{
+
+	"width": 500,
+	"height": 300,
+	"tree": {
+
+		"name": "<root>",
+		"type": "object",
+		"text": "Main object",
+		"value": [
+		
+			{
+				"name": "replace",
+				"type": "boolean",
+				"text": "Should this tag replace other tags of the same name or merge with them",
+				"value": []
+			},
+	
+			{
+				"name": "values",
+				"type": "array",
+				"text": "Elements belonging to this tag",
+				"value": [
+				
+					{
+						"name": "<entry>",
+						"type": "string",
+						"text": "Id or #tag",
+						"value": []
+					},
+
+					{
+						"name": "<entry>",
+						"type": "object",
+						"text": "Entry with special options",
+						"value": [
+
+							{
+								"name": "id",
+								"type": "string",
+								"text": "Id or #tag",
+								"value": []
+							},
+
+							{
+								"name": "required",
+								"type": "boolean",
+								"text": "Whether or not loading this tag should fail if this entry is not found",
+								"value": []
+							}
+
+						]
+					}
+
+				]
+			}
+		
+		]
+
+	}
+
+}

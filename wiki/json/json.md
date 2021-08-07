@@ -12,3 +12,4 @@ This section describes how to create specific JSON resources. **TODO**: write ou
 * Data
 	* ~~[Recipes](recipes.md)~~
 	* ~~[Loot Tables](loot.md)~~
+	* [Tags](tags.md)
